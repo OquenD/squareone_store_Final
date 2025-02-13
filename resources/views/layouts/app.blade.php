@@ -11,6 +11,16 @@
     @endif
 
     @vite(['resources/js/app.js'])   
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            const searchToggle = document.getElementById("search-toggle");
+            const searchBar = document.querySelector(".search-bar-container");
+
+            searchToggle.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default link action
+                searchBar.style.display = searchBar.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
 </head>
 <body>
     @include('partials.header')

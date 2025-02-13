@@ -10,6 +10,7 @@ export default defineConfig({
                 'resources/css/product_page.css',
                 'resources/css/cart_page.css',
                 'resources/css/checkout.css',
+                'resources/css/auth.css',
                 'resources/js/app.js'
             ],
             refresh: true,
